@@ -1,5 +1,6 @@
 $dark-blue-primary: #1b263b;
 $white-primary: #f1f1f1;
+$green-primary: #38a3a5;
 
 body {
   margin: 0;
@@ -24,6 +25,46 @@ header {
 
 .logo {
   width: 50px;
+}
+
+
+/********* HEADER *********/
+
+.block-social-network {
+  position: fixed;
+  //margin-left: 10px;
+  padding-left: 40px;
+  bottom: 10px;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      margin: 0px auto;
+      background: $green-primary;
+    }
+
+    &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 50px;
+        margin: 0px auto;
+        background: $green-primary;
+      }
+
+    a {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 

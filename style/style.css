@@ -20,6 +20,39 @@ header {
   width: 50px;
 }
 
+/********* HEADER *********/
+.block-social-network {
+  position: fixed;
+  padding-left: 40px;
+  bottom: 10px;
+}
+.block-social-network nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.block-social-network nav:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  margin: 0px auto;
+  background: #38a3a5;
+}
+.block-social-network nav:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  margin: 0px auto;
+  background: #38a3a5;
+}
+.block-social-network nav a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /********* SECTION INTRODUCTION *********/
 .section-introduction {
   display: flex;
