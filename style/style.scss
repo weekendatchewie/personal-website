@@ -1,4 +1,54 @@
+$dark-blue-primary: #1b263b;
+$white-primary: #f1f1f1;
+
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: $dark-blue-primary;
+  color: $white-primary;
+}
+
+/********* RESET TAG *********/
+
+p, h1 {
+  margin: 0;
+}
+
+
+/********* HEADER *********/
+
+header {
+  padding: 20px 40px;
+}
+
+.logo {
+  width: 50px;
+}
+
+
+/********* SECTION INTRODUCTION *********/
+
+.section-introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-introduction {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 65px;
+  }
+}
+
+.img-profile {
+  border-radius: 50%;
 }
