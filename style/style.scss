@@ -1,4 +1,5 @@
 $dark-blue-primary: #0d1b2a;
+$dark-blue-secondary: #1b263b;
 $white-primary: #f1f1f1;
 $green-primary: #38a3a5;
 
@@ -28,6 +29,11 @@ header {
 
 .logo {
   width: 50px;
+  transition: filter .2s linear;
+
+  &:hover {
+    filter: brightness(1.5) drop-shadow(0 0 2px $green-primary);
+  }
 }
 
 
@@ -90,10 +96,10 @@ header {
 /********* SECTION INTRODUCTION *********/
 
 .section-introduction {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 auto;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  flex: auto;
 }
 
 .container-introduction {
@@ -113,6 +119,24 @@ header {
 .img-profile {
   border-radius: 50%;
 }
+
+
+/********* SECTION ABOUT *********/
+.section-about {
+  flex: auto;
+  background-color: $dark-blue-secondary;
+  margin-top: 50px;
+  padding: 150px;
+
+  .container-about {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /********* FOOTER *********/
 footer {

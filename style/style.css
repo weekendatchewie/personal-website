@@ -21,6 +21,10 @@ header {
 
 .logo {
   width: 50px;
+  transition: filter 0.2s linear;
+}
+.logo:hover {
+  filter: brightness(1.5) drop-shadow(0 0 2px #38a3a5);
 }
 
 /********* NAVBAR SOCIAL NETWORK *********/
@@ -70,10 +74,7 @@ header {
 
 /********* SECTION INTRODUCTION *********/
 .section-introduction {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 0 auto;
+  flex: auto;
 }
 
 .container-introduction {
@@ -91,6 +92,21 @@ header {
 
 .img-profile {
   border-radius: 50%;
+}
+
+/********* SECTION ABOUT *********/
+.section-about {
+  flex: auto;
+  background-color: #1b263b;
+  margin-top: 50px;
+  padding: 150px;
+}
+.section-about .container-about {
+  display: flex;
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /********* FOOTER *********/
