@@ -1,4 +1,4 @@
-$dark-blue-primary: #1b263b;
+$dark-blue-primary: #0d1b2a;
 $white-primary: #f1f1f1;
 $green-primary: #38a3a5;
 
@@ -8,6 +8,9 @@ body {
   box-sizing: border-box;
   background-color: $dark-blue-primary;
   color: $white-primary;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /********* RESET TAG *********/
@@ -35,46 +38,44 @@ header {
   padding-left: 40px;
   bottom: 10px;
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 15px;
 
-    &:before {
-      content: "";
-      display: block;
-      width: 2px;
-      height: 50px;
-      margin: 0 auto;
-      background: $green-primary;
+  &:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    margin: 0 auto;
+    background: $green-primary;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 50px;
+    margin: 0 auto;
+    background: $green-primary;
+  }
+
+  a {
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 30px;
+      filter: invert(1);
+      transition: transform .2s linear, filter .2s linear;
     }
 
-    &:after {
-      content: "";
-      display: block;
-      width: 2px;
-      height: 50px;
-      margin: 0 auto;
-      background: $green-primary;
-    }
-
-    a {
-      margin-left: auto;
-      margin-right: auto;
+    &:hover {
 
       img {
-        width: 30px;
-        filter: invert(1);
-        transition: transform .2s linear, filter .2s linear;
-      }
-
-      &:hover {
-
-        img {
-          transform: translateY(-5px);
-          filter: invert(1) drop-shadow(0 0 6px $green-primary);
-        }
+        transform: translateY(-5px);
+        filter: invert(1) drop-shadow(0 0 6px $green-primary);
       }
     }
   }
@@ -92,6 +93,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 0 auto;
 }
 
 .container-introduction {
@@ -110,4 +112,36 @@ header {
 
 .img-profile {
   border-radius: 50%;
+}
+
+/********* FOOTER *********/
+footer {
+  flex-shrink: 0;
+  min-height: 110px;
+
+  .block-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: inherit;
+    padding: 20px 0;
+
+    .block-social-network-footer {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        gap: 15px;
+
+        a {
+          img {
+            width: 50px;
+            filter: invert(1);
+          }
+        }
+      }
+    }
+  }
 }
