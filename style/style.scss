@@ -96,9 +96,6 @@ header {
 /********* SECTION INTRODUCTION *********/
 
 .section-introduction {
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
   flex: auto;
 }
 
@@ -135,6 +132,14 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+
+/********* SECTION EXPERIENCE *********/
+.section-experience {
+  flex: auto;
+  padding: 30px 150px;
+
 }
 
 

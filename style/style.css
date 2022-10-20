@@ -109,6 +109,12 @@ header {
   margin-right: auto;
 }
 
+/********* SECTION EXPERIENCE *********/
+.section-experience {
+  flex: auto;
+  padding: 30px 150px;
+}
+
 /********* FOOTER *********/
 footer {
   flex-shrink: 0;
