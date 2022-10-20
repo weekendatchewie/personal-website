@@ -4,4 +4,6 @@ Petit site perso du style portfolio pour en savoir un peu plus sur moi : ma pers
 
 J'ai décidé de partir sur du HTML/CSS tout simplement, avec un peu de JS aussi. Pour le style j'utilise SASS, ça me permet de le découvrir plus en détail.
 
+Les icons utilisées proviennent de : icons8.fr
+
 🤘🚀

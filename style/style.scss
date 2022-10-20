@@ -45,7 +45,7 @@ header {
     &:before {
       content: "";
       display: block;
-      width: 1px;
+      width: 2px;
       height: 50px;
       margin: 0px auto;
       background: $green-primary;
@@ -54,7 +54,7 @@ header {
     &:after {
         content: "";
         display: block;
-        width: 1px;
+        width: 2px;
         height: 50px;
         margin: 0px auto;
         background: $green-primary;
@@ -63,6 +63,11 @@ header {
     a {
       margin-left: auto;
       margin-right: auto;
+
+      img {
+        width: 30px;
+        filter: invert(1);
+      }
     }
   }
 }
